@@ -1279,6 +1279,11 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
+"@juggle/resize-observer@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
+  integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
+
 "@mdi/js@^5.2.45":
   version "5.3.45"
   resolved "https://registry.yarnpkg.com/@mdi/js/-/js-5.3.45.tgz#c6f523311bf77e339051e24aaa3eddabf565a027"
@@ -8687,11 +8692,6 @@ require-main-filename@^2.0.0:
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
 
-resize-observer-polyfill@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
-  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
-
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
@@ -9189,25 +9189,25 @@ simple-websocket@^8.0.0:
     readable-stream "^3.1.1"
     ws "^7.0.0"
 
-simplebar-react@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/simplebar-react/-/simplebar-react-2.2.1.tgz#c66e5ddf9fc6adf718d141f010542862ee6f517a"
-  integrity sha512-uPGCmcwGNhk7YPguz+K+dUmPZsWpuzqjyYWXfLDoHh4+R/aiJQWaCZH8KvPu/acItn+KVBHcmJKqIwPjggOiig==
+simplebar-react@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/simplebar-react/-/simplebar-react-2.4.0.tgz#f28c0a3aefb6f46d20d4e3b40af5b24c69f0e920"
+  integrity sha512-51a2KzlM9uefjT1GAJCLiMkIEor6sqBoWTGyvcnG0DpZgVlINi/rYVDn7BAXTqRAg9jeA/iePgc33Mp+IIo9/Q==
   dependencies:
     prop-types "^15.6.1"
-    simplebar "^5.2.1"
+    simplebar "^5.3.7"
 
-simplebar@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/simplebar/-/simplebar-5.2.1.tgz#b373841d10df1827562481306a51dae9062734d6"
-  integrity sha512-nfOsptB/tb1kzSOaDIJFcrm8EXj5J0pZBPLGetJR8SE6v+97cbedtlNH/L81okgjsFlF11kDndmZ0mscaGAILw==
+simplebar@^5.3.7:
+  version "5.3.7"
+  resolved "https://registry.yarnpkg.com/simplebar/-/simplebar-5.3.7.tgz#3a6d5c208fb4cdb5e203f7c246e0b5f57c625c47"
+  integrity sha512-JX5SgW+7ZELyAvjSxiu3acFxdSgnzfzQU8LmoT5jBWB6d6/VJYGEaMN+O/JL5Gmt6DBRCyiLEGEcfAzDv7xljA==
   dependencies:
+    "@juggle/resize-observer" "^3.3.1"
     can-use-dom "^0.1.0"
     core-js "^3.0.1"
     lodash.debounce "^4.0.8"
     lodash.memoize "^4.1.2"
     lodash.throttle "^4.1.1"
-    resize-observer-polyfill "^1.5.1"
 
 slash@^2.0.0:
   version "2.0.0"
